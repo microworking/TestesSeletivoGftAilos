@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Questao5</name>
+    </assembly>
+    <members>
+        <member name="M:Questao5.Infrastructure.Services.Controllers.CheckingAccountController.AccountBalance(System.Int32)">
+            <summary>Obter o saldo da conta corrente pelo número da conta</summary>
+            <param name="AccountNumber"></param>
+            <remarks>
+            {
+                "AccountNumber": int - Número da conta
+            }
+            </remarks>
+            <returns>Retorna o número da conta corrente, nome do titular da conta corrente, data e hora da resposta da consulta e o valor do saldo atual.</returns>
+            <response code="200">Retorna o número da conta corrente, nome do titular da conta corrente, data e hora da resposta da consulta e o valor do saldo atual</response>
+            <response code="400">Retorna um código e uma mensagem de erro</response>
+        </member>
+        <member name="M:Questao5.Infrastructure.Services.Controllers.CheckingAccountController.AccountMovement(Questao5.Application.Commands.Requests.AccountMovementRequest)">
+            <summary>Movimenta a conta corrente mediante saques e depósitos.</summary>
+            <param name="request"></param>
+            <remarks>
+            {
+                "AccountNumber": int - Número da conta,\r\n
+                "MovementValue": double - Valor a ser movimentado,\r\n
+                "MovementType": string - Modalidade da operação. Aceita os valores C para crédito e D para débito
+            }
+            </remarks>
+            <response code="200">Retorna o UID gerado pela movimentação da conta corrente.</response>
+            <response code="400">Retorna um código e uma mensagem de erro.</response>
+        </member>
+    </members>
+</doc>

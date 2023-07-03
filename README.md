@@ -1,2 +1,2 @@
-# TestesSeletivoGftAlois
-Solução dos testes do processo seletivo do cliente Alois.
+# TesteSeletivoGFT
+Testes para o processo seletivo da Ailos
